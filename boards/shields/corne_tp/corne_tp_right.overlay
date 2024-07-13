@@ -413,6 +413,12 @@
     interrupts = < 42 3 >;
 };
 
+// Nice View Settings
+
+&nice_view_spi {
+    cs-gpios = <&pro_micro 10 GPIO_ACTIVE_HIGH>;
+};
+
 
 /*
  * PS/2 Mouse / Trackpoint - Device Definitions
