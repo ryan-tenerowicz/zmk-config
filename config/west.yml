@@ -62,5 +62,10 @@ manifest:
       remote: infused-kim
       revision: main
 
+    # zmk module for nice_peri_view
+    - name: tmp-npv
+      remote: infused-kim
+      revision: main
+
   self:
     path: config
