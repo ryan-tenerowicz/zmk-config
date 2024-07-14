@@ -46,3 +46,21 @@ nice_view_spi: &spi0 {
     pinctrl-names = "default", "sleep";
     cs-gpios = <&pro_micro 9 GPIO_ACTIVE_HIGH>;
 };
+
+&display_spi {
+	status = "okay";
+	sharp: ls0xx@0 {
+		compatible = "sharp,ls0xx";
+		label = "DISPLAY";
+		spi-max-frequency = <2000000>;
+		reg = <0>;
+		width = <160>;
+		height = <68>;
+	};
+};
+
+/ {
+  chosen {
+    zephyr,display = &sharp;
+  };
+};
