@@ -41,5 +41,11 @@ manifest:
       remote: dhruvinsh
       revision: main
 
+    # Badjeff's input listener that can turn mouse movement
+    # into scroll movement
+    - name: zmk-input-behavior-listener
+      remote: badjeff
+      revision: main
+
   self:
     path: config
