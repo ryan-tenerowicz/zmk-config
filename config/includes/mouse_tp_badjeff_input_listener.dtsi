@@ -3,11 +3,12 @@
 
 #ifdef HAS_MOUSE_TP_BADJEFF_INPUT_LISTENER
   #ifdef HAS_MOUSE_TP
-
+    #ifdef MOUSE_PS2_DT_PRESENT
     // Disable original input listener
-    &mouse_ps2_input_listener {
-      status = "disabled";
-    };
+      &mouse_ps2_input_listener {
+        status = "disabled";
+      };
+    #endif  // MOUSE_PS2_DT_PRESENT
 
     / {
       // Badjeff's input listener for mouse movement
