@@ -21,6 +21,8 @@
 #define MOUSE_TP_KEYS 13
 #define MOUSE_TP_SET 14
 
+#define HAS_MOUSE_TP_BADJEFF_INPUT_LISTENER
+
 #ifdef HAS_UROB
   #define HAS_TRI_STATE
   #define HAS_NUM_WORD
