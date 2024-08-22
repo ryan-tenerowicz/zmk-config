@@ -17,7 +17,7 @@
 #define ADJUST 9
 #define LOWER 10
 #define MOUSE_KEYS 11
-#define MOUSE_TP 2
+#define MOUSE_TP 1
 #define MOUSE_TP_KEYS 13
 #define MOUSE_TP_SET 14
 
@@ -55,7 +55,7 @@
   #define U_TOG_TP_SET &none
 #endif  // HAS_MOUSE_TP
 
-
+jmklnhue,yi.'o
 / {
 
   keymap {
@@ -67,7 +67,7 @@
      &kp Q                    &kp W                    &hm_l MY_HYPER F         &kp P                    &kp B                         &kp J                    &kp L                    &hm_r MY_HYPER U         &kp Y                    &kp SINGLE_QUOTE
      &hm_l LCTRL A            &hm_l LALT R             &hm_l LGUI S             &hm_shift_l LSHFT T      &kp G                         &kp M                    &hm_shift_r RSHFT N      &hm_r RGUI E             &hm_r RALT I             &hm_r RCTRL O
      &kp Z                    &kp X                    &hm_l MY_MEH C           &kp D                    &kp V                         &kp K                    &kp H                    &mm_comma_semi_meh       &mm_dot_colon            &kp SLASH
-                                                      &mm_grescm_gui           &lt_l SYM SPACE          &lt ADJUST TAB                &mm_bspc_del_layer       &lt NAV RETURN           &lt_num_word NUM NUM
+                                                      &kp A                    &kp B        &kp C                           &kp A      &kp B         &kp C
 
       >;
      //  sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
