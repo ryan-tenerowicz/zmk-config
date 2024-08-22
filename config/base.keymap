@@ -55,7 +55,6 @@
   #define U_TOG_TP_SET &none
 #endif  // HAS_MOUSE_TP
 
-jmklnhue,yi.'o
 / {
 
   keymap {
