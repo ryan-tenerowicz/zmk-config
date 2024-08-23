@@ -45,15 +45,12 @@
   
           // Use scroll event codes
           evt-type = <INPUT_EV_REL>;
-          x-input-code = <INPUT_REL_MISC>;
-          y-input-code = <INPUT_REL_WHEEL>;
+          x-input-code = <INPUT_REL_WHEEL>;
+          y-input-code = <INPUT_REL_MISC>;
   
           // Slow down the scrolling
           scale-multiplier = <1>;
-          scale-divisor = <8>;
-  
-          // Invert scroll direction
-          y-invert;
+          scale-divisor = <16>;
         };
   
         mouse_ps2_move_tog_layer: mouse_ps2_move_tog_layer {
