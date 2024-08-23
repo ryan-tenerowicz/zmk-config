@@ -49,8 +49,7 @@
           y-input-code = <INPUT_REL_MISC>;
   
           // Slow down the scrolling
-          scale-multiplier = <1>;
-          scale-divisor = <8>;
+          bindings = <&ib_wheel_scaler 1 8>
 
           y-invert;
         };
@@ -60,6 +59,15 @@
                 #binding-cells = <1>;
                 time-to-live-ms = <500>;
         };
+
+        /* define a resolution down scaler only for INPUT_REL_WHEEL */
+        ib_wheel_scaler: ib_wheel_scaler {
+                compatible = "zmk,input-behavior-scaler";
+                #binding-cells = <2>;
+                evt-type = <INPUT_EV_REL>;
+                input-code = <INPUT_REL_WHEEL>;
+        };
+
       };
     #endif  // MOUSE_PS2_DT_PRESENT
   #endif  // HAS_MOUSE_TP
