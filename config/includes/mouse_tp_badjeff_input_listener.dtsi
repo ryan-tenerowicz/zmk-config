@@ -50,7 +50,9 @@
   
           // Slow down the scrolling
           scale-multiplier = <1>;
-          scale-divisor = <16>;
+          scale-divisor = <8>;
+
+          y-invert;
         };
   
         mouse_ps2_move_tog_layer: mouse_ps2_move_tog_layer {
