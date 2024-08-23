@@ -7,9 +7,10 @@
 // Define layer numbers
 #define BASE 0
 #define BASE_QWERTY 1
-#define NAV 2
+#define NAV_WORD 15
 #define NUM_WORD 3
 #define SYM_WORD 4
+#define NAV 2
 #define NUM 6
 #define SYM 7
 #define FUNC 8
