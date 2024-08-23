@@ -7,10 +7,9 @@
 // Define layer numbers
 #define BASE 0
 #define BASE_QWERTY 1
-#define NAV_WORD 2
+#define NAV 2
 #define NUM_WORD 3
 #define SYM_WORD 4
-#define NAV 5
 #define NUM 6
 #define SYM 7
 #define FUNC 8
@@ -66,7 +65,7 @@
      &kp Q                    &kp W                    &hm_l MY_HYPER F         &kp P                    &kp B                         &kp J                    &kp L                    &hm_r MY_HYPER U         &kp Y                    &kp SINGLE_QUOTE
      &hm_l LCTRL A            &hm_l LALT R             &hm_l LGUI S             &hm_shift_l LSHFT T      &kp G                         &kp M                    &hm_shift_r RSHFT N      &hm_r RGUI E             &hm_r RALT I             &hm_r RCTRL O
      &kp Z                    &kp X                    &hm_l MY_MEH C           &kp D                    &kp V                         &kp K                    &kp H                    &mm_comma_semi_meh       &mm_dot_colon            &kp SLASH
-                                                      &kp A                    &kp B        &kp C                           &kp A      &kp B         &kp C
+                                                      &kp A                    &kp B        &kp C                                     &mo NAV      &mo NAV         &mo NAV
 
       >;
      //  sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
@@ -74,6 +73,17 @@
 
     MouseTP_layer {
       display-name = "TP";
+      bindings = <
+     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
+     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
+     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
+                                                       &ltog LGUI MOUSE_TP      &lt MOUSE_TP_KEYS SPACE  &trans                        &trans                    &m_lt_mkp NAV LCLK      &lt_mkp NUM RCLK
+      >;
+     //  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
+    };
+
+  ScrollTP_layer {
+      display-name = "Scroll";
       bindings = <
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
