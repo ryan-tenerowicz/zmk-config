@@ -19,16 +19,7 @@
           // SYM and NAV
           layers = <
             BASE
-            BASE_QWERTY
-            NUM_WORD
-            NAV
-            NUM
-            FUNC
-            ADJUST
-            LOWER
-            MOUSE_KEYS
             MOUSE_TP
-            MOUSE_TP_SET
           >;
   
           // Auto toggle Mouse_TP layer when the mouse moves
@@ -48,12 +39,8 @@
           compatible = "zmk,input-behavior-listener";
           device = <&mouse_ps2>;
   
-          // The TP will scroll only on the SYM layer
           layers = <
-            SYM
-            SYM_WORD
             NAV
-            NAV_WORD
           >;
   
           // Use scroll event codes
