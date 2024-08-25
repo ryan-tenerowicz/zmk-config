@@ -63,10 +63,10 @@
     Base_layer {
       display-name = "Base";
       bindings = <
-     &kp Q                    &kp W                    &hm_l MY_HYPER F         &kp P                    &kp B                         &kp J                    &kp L                    &hm_r MY_HYPER U         &kp Y                    &kp SINGLE_QUOTE
-     &hm_l LCTRL A            &hm_l LALT R             &hm_l LGUI S             &hm_shift_l LSHFT T      &kp G                         &kp M                    &hm_shift_r RSHFT N      &hm_r RGUI E             &hm_r RALT I             &hm_r RCTRL O
-     &kp Z                    &kp X                    &hm_l MY_MEH C           &kp D                    &kp V                         &kp K                    &kp H                    &mm_comma_semi_meh       &mm_dot_colon            &kp SLASH
-                                                      &kp A                    &kp B        &kp C                                     &mo NAV      &mo NAV         &mo NAV
+     &kp B                    &kp Y                    &hm_l MY_HYPER O         &kp U                    &kp SINGLE_QUOTE              &kp SEMICOLON            &kp L                    &hm_r MY_HYPER D         &kp W                    &kp V
+     &hm_l LCTRL C            &hm_l LALT I             &hm_l LGUI E             &hm_shift_l LSHFT A      &kp Z                         &kp Q                    &hm_shift_r RSHFT H      &hm_r RGUI T             &hm_r RALT S             &hm_r RCTRL N
+     &kp G                    &kp X                    &hm_l MY_MEH J           &kp K                    &kp COMMA                     &kp PERIOD               &kp R                    &hm_r MY_HYPER M         &kp F                    &kp P
+                                                       &kp A                    &kp B        &kp C                                     &mo NAV      &mo NAV         &mo NAV
 
       >;
      //  sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
@@ -78,7 +78,7 @@
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
-                                                       &ltog LGUI MOUSE_TP      &lt MOUSE_TP_KEYS SPACE  &trans                        &trans                    &m_lt_mkp NAV LCLK      &lt_mkp NUM RCLK
+                                                       &mkp RCLK                &mkp LCLK                &mkp MCLK                     &mkp MCLK                &mkp LCLK                &mkp RCLK
       >;
      //  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
     };
