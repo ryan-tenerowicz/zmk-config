@@ -66,7 +66,7 @@
      &kp B                    &kp Y                    &hm_l MY_HYPER O         &kp U                    &kp SINGLE_QUOTE              &kp SEMICOLON            &kp L                    &hm_r MY_HYPER D         &kp W                    &kp V
      &hm_l LCTRL C            &hm_l LALT I             &hm_l LGUI E             &hm_shift_l LSHFT A      &kp Z                         &kp Q                    &hm_shift_r RSHFT H      &hm_r RGUI T             &hm_r RALT S             &hm_r RCTRL N
      &kp G                    &kp X                    &hm_l MY_MEH J           &kp K                    &kp COMMA                     &kp PERIOD               &kp R                    &hm_r MY_HYPER M         &kp F                    &kp P
-                                                       &kp A                    &kp B        &kp C                                     &mo NAV      &mo NAV         &mo NAV
+                                                       &kp A                    &kp SPACE                &kp BACKSPACE                 &kp ENTER                &kp SPACE                &mo NAV
 
       >;
      //  sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
