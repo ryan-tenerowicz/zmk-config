@@ -75,10 +75,10 @@
     MouseTP_layer {
       display-name = "TP";
       bindings = <
+     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &mo NAV                   &mkp MCLK                &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
-     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
-                                                       &mkp RCLK                &mkp LCLK                &mkp MCLK                     &mkp MCLK                &mkp LCLK                &mkp RCLK
+                                                       &trans                   &trans                   &trans                        &mkp LCLK                &mkp RCLK                &trans
       >;
      //  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
     };
