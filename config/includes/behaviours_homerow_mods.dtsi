@@ -36,7 +36,7 @@
         hm_ll: homerow_layermods_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            bindings = <&kp>,  <&mo>;
+            bindings = <&mo>,  <&kp>;
 
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
@@ -64,7 +64,7 @@
         hm_rl: homerow_layer_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            bindings = <&kp>, <&mo>;
+            bindings = <&mo>, <&kp>;
 
             flavor = "balanced";
             tapping-term-ms = <HM_TAPPING_TERM>;
