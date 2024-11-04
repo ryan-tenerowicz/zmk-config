@@ -75,7 +75,7 @@
     MouseTP_layer {
       display-name = "TP";
       bindings = <
-     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &mo NAV                   &mkp MCLK                &trans
+     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &hm_rmkp NAV MCLK         &trans                   &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
                                                        &trans                   &trans                   &trans                        &mkp LCLK                &mkp RCLK                &trans
