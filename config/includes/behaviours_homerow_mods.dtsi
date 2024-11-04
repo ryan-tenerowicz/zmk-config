@@ -75,7 +75,7 @@
             hold-trigger-on-release;
         };
 
-        hm_rmkp: homerow_layer_right {
+        hm_rmkp: homerow_mouse_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             bindings = <&mo>, <&mkp>;
