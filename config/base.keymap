@@ -70,7 +70,6 @@
                                                        &kp A         &kp SPACE                &kp BACKSPACE                 &kp ENTER                &kp SPACE                &mo NAV
 
       >;
-     //  sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
     };
 
     MouseTP_layer {
@@ -81,7 +80,6 @@
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
                                                        &trans                   &trans                   &trans                        &mkp LCLK                &mkp RCLK                &trans
       >;
-     //  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
     };
 
   ScrollTP_layer {
@@ -92,7 +90,6 @@
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
                                                        &ltog LGUI MOUSE_TP      &lt MOUSE_TP_KEYS SPACE  &trans                        &trans                    &m_lt_mkp NAV LCLK      &lt_mkp NUM RCLK
       >;
-     //  sensor-bindings = <&inc_dec_kp C_BRI_DN C_BRI_UP &inc_dec_kp LEFT RIGHT>;
     };
 
   };
