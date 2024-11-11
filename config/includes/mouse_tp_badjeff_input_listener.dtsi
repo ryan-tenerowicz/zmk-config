@@ -40,7 +40,7 @@
           device = <&mouse_ps2>;
   
           layers = <
-            NAV
+            SCROLL
           >;
   
           // Use scroll event codes

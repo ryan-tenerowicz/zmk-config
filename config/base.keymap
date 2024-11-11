@@ -7,25 +7,9 @@
 
 // Define layer numbers
 #define BASE 0
-#define BASE_QWERTY 1
-#define NAV_WORD 15
-#define NUM_WORD 3
-#define SYM_WORD 4
-#define NAV 2
-#define NUM 6
-#define SYM 7
-#define FUNC 8
-#define ADJUST 9
-#define LOWER 10
-#define MOUSE_KEYS 11
 #define MOUSE_TP 1
-#define MOUSE_TP_KEYS 13
-#define MOUSE_TP_SET 14
-
-#ifdef HAS_UROB
-  #define HAS_TRI_STATE
-  #define HAS_NUM_WORD
-#endif
+#define SCROLL 2
+#define COPY_LAYER 3
 
 // ZMK includes
 #include <behaviors.dtsi>
@@ -36,16 +20,7 @@
 
 
 // Personal includes
-#include "includes/custom_keycodes.dtsi"
-#include "includes/settings.dtsi"
-//#include "includes/settings_pd.dtsi"
-#include "includes/conditional_layers.dtsi"
-#include "includes/macros.dtsi"
-#include "includes/combos.dtsi"
 #include "includes/behaviours_homerow_mods.dtsi"
-#include "includes/behaviours_mod_morph.dtsi"
-#include "includes/behaviours_other.dtsi"
-#include "includes/mouse_keys.dtsi"
 #include "includes/mouse_tp.dtsi"
 #include "includes/mouse_tp_badjeff_input_listener.dtsi"
 
@@ -64,10 +39,10 @@
     Base_layer {
       display-name = "Base";
       bindings = <
-     &kp B                    &kp Y                    &kp O         &kp U                    &kp SINGLE_QUOTE              &kp SEMICOLON            &kp L                    &hm_rl NAV D      &kp W             &kp V
-     &hm_l LCTRL C            &kp I                    &kp E         &hm_shift_l LSHFT A      &kp Z                         &kp Q                    &hm_shift_r RSHFT H      &kp T             &kp S             &kp N
+     &kp B                    &kp Y                    &kp O         &kp U                    &kp SINGLE_QUOTE              &kp SEMICOLON            &kp L                    &hm_rl SCROLL D   &kp W             &kp V
+     &kp C                    &kp I                    &kp E         &hm_shift_l LSHFT A      &kp Z                         &kp Q                    &hm_shift_r RSHFT H      &hm_rl NUM T      &kp S             &kp N
      &kp G                    &kp X                    &kp J         &kp K                    &kp COMMA                     &kp PERIOD               &kp R                    &kp M             &kp F             &kp P
-                                                       &kp ENTER     &kp SPACE                &kp A                         &kp A                    &kp SPACE                &kp BACKSPACE
+                                                       &kp ENTER     &hm_ll COPY_LAYER SPACE  &kp ESC                       &kp A                    &kp SPACE                &kp BACKSPACE
 
       >;
     };
@@ -75,7 +50,7 @@
     MouseTP_layer {
       display-name = "TP";
       bindings = <
-     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &hm_rmkp NAV MCLK         &trans                   &trans
+     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &hm_rmkp SCROLL MCLK      &trans                   &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
                                                        &trans                   &trans                   &trans                        &mkp LCLK                &mkp RCLK                &trans
@@ -88,10 +63,29 @@
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
-                                                       &ltog LGUI MOUSE_TP      &lt MOUSE_TP_KEYS SPACE  &trans                        &trans                    &m_lt_mkp NAV LCLK      &lt_mkp NUM RCLK
+                                                       &trans                   &trans                   &trans                        &trans                   &trans                   &trans
+      >;
+    };
+
+  Copy_layer {
+      display-name = "Copy";
+      bindings = <
+     &trans                   &kp LC(W)                &kp LC(F)                &kp LC(LS(T))            &kp DEL                       &trans                   &trans                   &trans                    &trans                   &trans
+     &kp LC(Z)                &kp LC(X)                &kp LC(C)                &kp LC(V)                &kp LC(A)                     &trans                   &trans                   &trans                    &trans                   &trans
+     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
+                                                       &trans                   &trans                   &trans                        &trans                   &trans                   &trans
+      >;
+    };
+
+  Num_layer {
+      display-name = "Num";
+      bindings = <
+     &trans                   &kp NUMBER_7             &kp NUMBER_8             &kp NUMBER_9             &trans                        &trans                   &trans                   &trans                    &trans                   &trans
+     &trans                   &kp NUMBER_4             &kp NUMBER_5             &kp NUMBER_6             &kp NUMBER_0                  &trans                   &trans                   &trans                    &trans                   &trans
+     &trans                   &kp NUMBER_1             &kp NUMBER_2             &kp NUMBER_3             &trans                        &trans                   &trans                   &trans                    &trans                   &trans
+                                                       &trans                   &trans                   &trans                        &trans                   &trans                   &trans
       >;
     };
 
   };
-
 };
