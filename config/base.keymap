@@ -10,6 +10,7 @@
 #define MOUSE_TP 1
 #define SCROLL 2
 #define COPY_LAYER 3
+#define NUM 4
 
 // ZMK includes
 #include <behaviors.dtsi>
