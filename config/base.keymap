@@ -11,6 +11,7 @@
 #define SCROLL 2
 #define COPY_LAYER 3
 #define NUM 4
+#define SYM 5
 
 // ZMK includes
 #include <behaviors.dtsi>
@@ -41,9 +42,9 @@
       display-name = "Base";
       bindings = <
      &kp B                    &kp Y                    &kp O         &kp U                    &kp SINGLE_QUOTE              &kp SEMICOLON            &kp L                    &hm_rl SCROLL D   &kp W             &kp V
-     &kp C                    &kp I                    &kp E         &hm_shift_l LSHFT A      &kp Z                         &kp Q                    &hm_shift_r RSHFT H      &hm_rl NUM T      &kp S             &kp N
+     &kp C                    &kp I                    &hm_ll SYM E  &hm_shift_l LSHFT A      &kp Z                         &kp Q                    &hm_shift_r RSHFT H      &hm_rl NUM T      &kp S             &kp N
      &kp G                    &kp X                    &kp J         &kp K                    &kp COMMA                     &kp PERIOD               &kp R                    &kp M             &kp F             &kp P
-                                                       &kp ENTER     &hm_ll COPY_LAYER SPACE  &kp ESC                       &kp A                    &kp SPACE                &kp BACKSPACE
+                                                       &kp ENTER     &hm_ll COPY_LAYER SPACE  &kp TAB                       &kp ESC                  &kp SPACE                &kp BACKSPACE
 
       >;
     };
@@ -52,7 +53,7 @@
       display-name = "TP";
       bindings = <
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &hm_rmkp SCROLL MCLK      &trans                   &trans
-     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
+     &trans                   &mkp RCLK                &mkp MCLK                &mkp LCLK                &trans                        &trans                   &trans                   &trans                    &trans                   &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
                                                        &trans                   &trans                   &trans                        &mkp LCLK                &mkp RCLK                &trans
       >;
@@ -71,10 +72,10 @@
   Copy_layer {
       display-name = "Copy";
       bindings = <
-     &trans                   &kp LC(W)                &kp LC(F)                &kp LC(LS(T))            &kp DEL                       &trans                   &trans                   &trans                    &trans                   &trans
+     &trans                   &kp LC(W)                &kp LC(F)                &kp LC(LS(T))            &trans                        &trans                   &trans                   &trans                    &trans                   &trans
      &kp LC(Z)                &kp LC(X)                &kp LC(C)                &kp LC(V)                &kp LC(A)                     &trans                   &trans                   &trans                    &trans                   &trans
      &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &trans                   &trans                    &trans                   &trans
-                                                       &trans                   &trans                   &trans                        &trans                   &trans                   &trans
+                                                       &trans                   &trans                   &trans                        &trans                   &trans                   &kp DEL
       >;
     };
 
@@ -84,6 +85,16 @@
      &trans                   &kp NUMBER_7             &kp NUMBER_8             &kp NUMBER_9             &trans                        &trans                   &trans                   &trans                    &trans                   &trans
      &trans                   &kp NUMBER_4             &kp NUMBER_5             &kp NUMBER_6             &kp NUMBER_0                  &trans                   &trans                   &trans                    &trans                   &trans
      &trans                   &kp NUMBER_1             &kp NUMBER_2             &kp NUMBER_3             &trans                        &trans                   &trans                   &trans                    &trans                   &trans
+                                                       &trans                   &trans                   &trans                        &trans                   &trans                   &trans
+      >;
+    };
+
+  Sym_layer {
+      display-name = "Symbol";
+      bindings = <
+     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &kp SLASH                &kp BACKSLASH             &kp LEFT_BRACKET         &kp RIGHT_BRACKET
+     &kp LT                   &kp GT                   &trans                   &trans                   &trans                        &trans                   &kp MINUS                &kp EQUAL                 &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS
+     &trans                   &trans                   &trans                   &trans                   &trans                        &trans                   &kp GRAVE                &trans                    &kp LEFT_BRACE           &kp RIGHT_BRACE
                                                        &trans                   &trans                   &trans                        &trans                   &trans                   &trans
       >;
     };
