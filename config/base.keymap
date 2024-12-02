@@ -23,6 +23,7 @@
 
 // Personal includes
 #include "includes/behaviours_homerow_mods.dtsi"
+#include "includes/combos.dtsi"
 #include "includes/mouse_tp.dtsi"
 #include "includes/mouse_tp_badjeff_input_listener.dtsi"
 

@@ -1,0 +1,25 @@
+#define COMBO_TERM_FAST 35
+#define COMBO_TERM_SLOW 40
+#define COMBO_PRIOR_IDLE 100
+
+/ {
+  combos {
+    compatible = "zmk,combos";
+
+    combo_back {
+       timeout-ms = <COMBO_TERM_FAST>;
+       require-prior-idle-ms = <10>;
+       key-positions = <RT1 RT2>;
+       layers = <BASE MOUSE_TP SCROLL>;
+       bindings = <&kp K_BACK>;
+    };
+
+    combo_forward {
+       timeout-ms = <COMBO_TERM_FAST>;
+       require-prior-idle-ms = <10>;
+       key-positions = <RT2 RT3>;
+       layers = <BASE MOUSE_TP SCROLL>;
+       bindings = <&kp K_FORWARD>;
+    };
+  };
+};
