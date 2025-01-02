@@ -44,7 +44,7 @@
       bindings = <
      &kp B                    &kp Y                    &kp O         &kp U                    &kp G                         &kp X                    &kp L                    &hm_rl SCROLL D   &kp W             &kp V
      &kp C                    &kp I                    &hm_ll SYM E  &hm_shift_l LSHFT A      &kp Z                         &kp G                    &hm_shift_r RSHFT H      &hm_rl NUM T      &kp N             &kp S
-     &kp SINGLE_QUOTE         &kp COMMA                &kp PERIOD    &kp K                    &kp SLASH                     &kp J                    &kp R                    &kp M             &kp P             &kp F
+     &kp SINGLE_QUOTE         &kp COMMA                &kp PERIOD    &kp SLASH                &kp K                         &kp J                    &kp R                    &kp M             &kp P             &kp F
                                                        &kp BACKSPACE &hm_ll COPY_LAYER SPACE  &kp TAB                       &kp ESC                  &kp SPACE                &kp ENTER
 
       >;
