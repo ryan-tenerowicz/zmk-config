@@ -140,7 +140,7 @@
       // Require at least this amount of time since the last key tap to
       // activate the layer toggle. Prevents  activations of the mouse layer
       // when you accidentally touch the TrackPoint while typing
-      layer-toggle-require-prior-idle-ms = <200>;
+      layer-toggle-require-prior-idle-ms = <1500>;
     };
 
 
